@@ -1,25 +1,26 @@
-Public class Card
+public class Card
 {
-    private final int cardNumber;
-    private final char cardSuit;
+    private int cardNumber = 0;
+    private char cardSuit = 'x';
 
 	public Card()
     {
 
     }
 
-    public void create(int num, char suit)
+    public Card create(int num, char suit)
     {
         cardNumber = num;
         cardSuit = suit;
+        return this;
     }
 
-    public void getCardNumber()
+    public int getCardNumber()
     {
         return cardNumber;
     }
 
-    public void getCardSuit()
+    public char getCardSuit()
     {
         return cardSuit;
     }

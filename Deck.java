@@ -1,13 +1,20 @@
-Public class Deck
+import java.util.ArrayList;
+import java.util.List;
+
+public class Deck
 {
-    Card card;
-    List<Card> hearts = <card.create(2, H)>;
     public static void main(String[] args)
     {
-        for(int i = 0; i < hearts.length(); i++)
+        Card card = new Card();
+        //List<Card> hearts = card.create(2, 'H');
+        Card x = new Card();
+        x = card.create(2, 'H');
+        List<Card> hearts = new ArrayList<>();
+        hearts.add(x);
+        for(int i = 0; i < hearts.size(); i++)
         {
-            System.out.println(hearts[i].getCardNumber());
-            System.out.println(hearts[i].getCardSuit());
+            System.out.println(hearts.get(i).getCardNumber());
+            System.out.println(hearts.get(i).getCardSuit());
         }
     }
 }
