@@ -2,17 +2,17 @@ import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class Blackjack 
+public class Blackjack2
 {
 	public static void main(String[] args)
 	{
-		Deck deck = new Deck();
+		Deck2 deck2 = new Deck2();
 		Scanner scan = new Scanner(System.in);
 		int player, dealer;
 		String input;
 		Boolean isPlaying = true;
-		player = deck.pDeal();
-		dealer = deck.dDeal();
+		player = deck2.pDeal();
+		dealer = deck2.dDeal();
 		
 		while(isPlaying == true)
 		{
@@ -22,7 +22,7 @@ public class Blackjack
 			
 			if(input.equals("hit"))
 			{
-				player = deck.pHit(player);
+				player = deck2.pHit(player);
 				
 				if(player > 21)
 				{
@@ -39,13 +39,13 @@ public class Blackjack
 			else
 			{
 				System.out.println("Okay, dealer's turn.");
-				System.out.println("His hidden card was a " + deck.D1 + ".");
-				System.out.println("His total was " + deck.dTotal + ".\n");
+				System.out.println("His hidden card was a " + deck2.D1 + ".");
+				System.out.println("His total was " + deck2.dTotal + ".\n");
 				
 				while(dealer < 16)
 				{
 					System.out.println("Dealer chooses to hit.");
-					dealer = deck.dHit(dealer);
+					dealer = deck2.dHit(dealer);
 					
 					if(dealer > 21)
 					{

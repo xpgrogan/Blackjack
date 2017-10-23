@@ -2,7 +2,7 @@ import java.util.*;
 import java.awt.*;
 import javax.swing.*;
 
-public class Deck 
+public class Deck2
 {
 		Random rand = new Random();
 		int P1, P2, D1, D2, pTotal, dTotal;
